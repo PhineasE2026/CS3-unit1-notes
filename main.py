@@ -48,3 +48,37 @@ one_hundred_seventy_five_billion_times_three_thousand_sixty_five_plus_seven_to_t
 print(one_hundred_seventy_five_billion_times_three_thousand_sixty_five_plus_seven_to_the_power_of_3)
 
 print(multiply(20, 6))
+
+# *** LISTS ***
+#ordered mutable sequences
+empty_list = list() # constructor
+another_empty_list = []
+
+class_roster = ["Bryce", "Finny", "Jackson", "Kevin", "Maia", "Natalie", "Paige"]
+print(class_roster)
+print(len(class_roster))
+
+first_item = class_roster[0]
+print(first_item)
+
+#Update an item in a list, access by index
+class_roster[2] = "Jack"
+print(class_roster)
+
+lottery_nums = [13, 7, 89, 99, 44, 23, 4]
+print(sorted(lottery_nums))
+print(sorted(lottery_nums, reverse=True))
+print(lottery_nums)
+lottery_nums.sort()
+print(lottery_nums)
+class_roster.sort(reverse=True)
+print(class_roster)
+class_roster.sort()
+
+class_roster.append("Alex")
+class_roster.insert(0, "Zoie")
+class_roster.remove("Zoie")
+class_roster.pop()
+print(class_roster)
+
+print(13 in lottery_nums)
