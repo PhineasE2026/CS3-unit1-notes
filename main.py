@@ -82,3 +82,46 @@ class_roster.pop()
 print(class_roster)
 
 print(13 in lottery_nums)
+
+# *** TUPLES ***
+# sorted, immutable
+# useful for "snapshot" of a row of data
+student = ('Finny', 17, 'Computer Science', 4.0)
+print(student)
+# student[3] = 2.6
+
+# *** SETS ***
+# unsorted, stores other immutable types
+# no duplicates allowed
+songs = {'Stranger', '3005', '7', '3', 'Mutt', 'Freeze', '3005'}
+print(songs)
+# sets can be used to de-duplicate list items
+colors = ['blue', 'pink', 'purple', 'blue', 'pink']
+print(set(colors))
+
+songs.add('Gypsy')
+songs.add('Stranger')
+
+print(songs)
+
+# *** DICTIONARIES ***
+# mutable, but the keys can only be immutable types, like strings
+# { key: value } pairs. keys must be unique
+# unordered
+characters = { 'Aelin': 'Assassin queen',
+              'Karate Kid': 'pupil',
+              'Mr. Miyagi': 'sensei',
+              'Phil Dunphy': 'dad',
+              'Wall-E': 'trash robot',
+              'Princess Peach': 'damsel in distress',
+              'Dexter': 'serial killer'
+              }
+
+print(len(characters))
+# dictionary with numerical keys, list values
+grade_requirements = { 
+    9: ['Bio'],
+    10: ['Chem'],
+    11: ['Physics', 'Math', 'English', 'PE'],
+    12: ['Math', 'English', 'PE']
+    }
