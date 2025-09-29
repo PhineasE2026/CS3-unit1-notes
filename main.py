@@ -125,3 +125,46 @@ grade_requirements = {
     11: ['Physics', 'Math', 'English', 'PE'],
     12: ['Math', 'English', 'PE']
     }
+
+# Boolean expressions: true or falseo
+print(10 > 5) # True
+print(5 > 10) # False
+print(10 >= 10) # True
+print(7 <= 5) # False
+print(5 == 5) # True
+print(5 != 5) # False
+print("a" > "b") # False
+print('cat' < 'cot') # True, o is "greater" it comes later than a in the alphabet
+print('T' == 't') # False
+print('t' > 'T') # true, lowercase letters come first
+
+list_a = [1, 2, 3]
+list_b = [1, 2, 3]
+print(list_a == list_b) # True
+print(list_a is list_b) # False, different variable
+# typically only used "is" when comparing to None, True, false
+boolean_a = True
+print(boolean_a is True) # True, because the identity of the variable is True
+print(boolean_a is not False) # True
+
+# compound boolean operators: and, or, not
+
+boolean_b = True
+boolean_c = False
+print(boolean_a and boolean_b) # True
+print(boolean_b and boolean_c) # False
+print(boolean_b or boolean_c) # True
+print(boolean_a and (boolean_b or boolean_c)) # True
+
+# condiitonals/branching/selection
+def can_drive(age):
+    if (age >= 17):
+        print("you can get a license in New York state")
+    elif (age == 16):
+        print("you can get a permit in ny state")
+    else:
+        print("too young to drive!")
+
+can_drive(15)
+can_drive(16)
+can_drive(17)
