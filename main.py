@@ -168,3 +168,43 @@ def can_drive(age):
 can_drive(15)
 can_drive(16)
 can_drive(17)
+
+# ITERATIon - repetition (for statements, while statemenets, et cetera)
+# while loops: run until a condition is met
+
+max = 16
+counter = 6
+while (counter <= max):
+    print(f'Count is {counter}')
+    counter += 1
+
+print(class_roster)
+for student in class_roster:
+    print(student)
+
+#prints 0 until 3
+for num in range(4):
+    print(num)
+
+for num in range(1, 5):
+    print(num)
+
+#range(start, stop, step)
+for num in range(10, 50, 5):
+    print(num)
+
+#python help function, help(range)
+
+for index, item in enumerate(class_roster):
+    print(f'Item: {item} is at index {index}')
+
+for character, description in characters.items():
+    #character represents the keys of this dict
+    #description represents the values of this dict
+    print(f'{character} is a {description}')
+
+hex_colors = {
+    'red': '#FF0000'
+    'green': '#008000'
+    'blue': '#0000FF'
+}
